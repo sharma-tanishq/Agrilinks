@@ -30,6 +30,10 @@ const ReportSchema= new Schema({
         type:Number,
         required:true,
     },
-})
+    timestamp:{
+        type:Number,
+    }
+}
+)
 Report = mongoose.model('report',ReportSchema);
 module.exports=Report;
